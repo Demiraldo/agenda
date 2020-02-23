@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35d32439-c1df-4a39-8b97-50056bb2e541" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/migrations/0002_auto_20200223_1432.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,14 +22,18 @@
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1YD1xOrPdglQkctsTT1Iwd663Mw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -64,36 +76,53 @@
       <option name="presentableId" value="Default" />
       <updated>1582462597291</updated>
     </task>
+    <task id="LOCAL-00001" summary="commit normal">
+      <created>1582466438763</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582466438763</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="commit normal" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit normal" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="9" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582462916665">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="9" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1582462916665" />
-    <state width="1308" height="156" key="GridCell.Tab.0.bottom" timestamp="1582463630398">
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1582479924285">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1308" height="156" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582463630398" />
-    <state width="1308" height="156" key="GridCell.Tab.0.center" timestamp="1582463630396">
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1582479924285" />
+    <state width="1308" height="156" key="GridCell.Tab.0.bottom" timestamp="1582478983630">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1308" height="156" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582463630396" />
-    <state width="1308" height="156" key="GridCell.Tab.0.left" timestamp="1582463630395">
+    <state width="1308" height="156" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582478983630" />
+    <state width="1308" height="156" key="GridCell.Tab.0.center" timestamp="1582478983629">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1308" height="156" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582463630395" />
-    <state width="1308" height="156" key="GridCell.Tab.0.right" timestamp="1582463630397">
+    <state width="1308" height="156" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582478983629" />
+    <state width="1308" height="156" key="GridCell.Tab.0.left" timestamp="1582478983627">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1308" height="156" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582463630397" />
+    <state width="1308" height="156" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582478983627" />
+    <state width="1308" height="156" key="GridCell.Tab.0.right" timestamp="1582478983629">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="156" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582478983629" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1582462815907">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1582462815907" />
-    <state x="492" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582466310331">
+    <state x="492" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582479942187">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="492" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1582466310331" />
+    <state x="492" y="271" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1582479942187" />
   </component>
 </project>
