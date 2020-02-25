@@ -28,5 +28,9 @@ urlpatterns = [
     # path('', views.index)
 
     # segunda forma de redirecionar o index
-    path('', RedirectView.as_view(url='/agenda/'))
+    path('', RedirectView.as_view(url='/agenda/')),
+    path('login/', views.logar_usuario),
+    path('login/autenticar', views.submit_usuario),
+    path('logout/', views.logout_usuario)
+
 ]
