@@ -9,6 +9,7 @@ class Evento(models.Model):
     titulo = models.CharField(max_length=100)
     descricao = models.CharField(max_length=2000, blank=True, null=True)
     data_evento = models.DateTimeField(verbose_name='Data do Evento')
+    local_evento = models.CharField(max_length=200, null=True)
     data_criacao = models.DateTimeField(auto_now=True)
     usuario = models.ForeignKey(User, on_delete=models.CASCADE)
 
