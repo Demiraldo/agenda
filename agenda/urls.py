@@ -23,7 +23,8 @@ from django.views.generic import RedirectView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('agenda/', views.lista_eventos),
-
+    path('agenda/cadevento/', views.cadevento),
+    path('agenda/cadevento/submit', views.salvar_evento),
     # primeira  forma de redirecionar o index
     # path('', views.index)
 
