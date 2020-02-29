@@ -49,7 +49,11 @@ def lista_eventos(request):
 
 @login_required(login_url='/login/')
 def cadevento(request):
-    return render(request, 'cevento.html')
+    id_evento = request.GET.get('id')
+    dados_recebidos = {}
+    if id_evento:
+        dados_recebidos['evento'] = Evento.objects.get(id=id_evento)
+    return render(request, 'cevento.html', dados_recebidos)
 
 
 @login_required(login_url='/login/')
@@ -60,9 +64,36 @@ def salvar_evento(request):
         descricao = request.POST.get('descricao')
         local_evento = request.POST.get('local_evento')
         usuario = request.user
-        Evento.objects.create(titulo=titulo,
-                              data_evento=data_evento,
-                              descricao=descricao,
-                              local_evento=local_evento,
-                              usuario=usuario)
+        alterando = request.POST.get('id_alterando')
+
+        if alterando:
+            eventoalteracao = Evento.objects.get(id=alterando)
+            if eventoalteracao.usuario == usuario:
+                eventoalteracao.titulo = titulo
+                eventoalteracao.data_evento = data_evento
+                eventoalteracao.descricao = descricao
+                eventoalteracao.local_evento = local_evento
+                eventoalteracao.save()
+
+            # ---------------------------------------
+            """SEGUNDA FORMA DE GRAVAR AS ALTERAÇÕES"""
+            # Evento.objects.filter(id=alterando).update(titulo=titulo,
+            #                                           data_evento=data_evento,
+            #                                           descricao=descricao,
+            #                                           local_evento=local_evento)
+        else:
+            Evento.objects.create(titulo=titulo,
+                                  data_evento=data_evento,
+                                  descricao=descricao,
+                                  local_evento=local_evento,
+                                  usuario=usuario)
+    return redirect('/')
+
+
+@login_required(login_url='/login/')
+def deletar_evento(request, id_evento):
+    usuario = request.user
+    evento_atual = Evento.objects.get(id=id_evento)
+    if usuario == evento_atual.usuario:
+        evento_atual.delete()
     return redirect('/')

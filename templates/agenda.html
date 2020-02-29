@@ -7,7 +7,13 @@
         </a>
         <ul>
             {% for evento in eventos %}
-                <li> {{ evento.titulo }} - {{ evento.get_data_evento }} </li>
+                <li> {{ evento.titulo }} - {{ evento.get_data_evento }} -
+                    {% if evento.local_evento != None %}
+                        {{ evento.local_evento }}
+                    {% endif %}
+                    (<a href="cadevento/?id={{ evento.id }}">Editar</a>
+                    /<a href="cadevento/delete/{{ evento.id }}">Excluir</a> )
+                </li>
             {% endfor %}
         </ul>
 {% endblock %}

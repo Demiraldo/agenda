@@ -25,6 +25,7 @@ urlpatterns = [
     path('agenda/', views.lista_eventos),
     path('agenda/cadevento/', views.cadevento),
     path('agenda/cadevento/submit', views.salvar_evento),
+    path('agenda/cadevento/delete/<int:id_evento>/', views.deletar_evento),
     # primeira  forma de redirecionar o index
     # path('', views.index)
 
